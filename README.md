@@ -27,20 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenn-shot-desktop.png)
+![](./screenn-shot-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Rod-Barbosa/Stats-preview-card-component)
+- Live Site URL: [Add live site URL here](https://github.com/Rod-Barbosa/Stats-preview-card-component/blob/gh-pages/index.md)
 
 ## My process
 
@@ -51,59 +44,58 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project was good to take the dust off of some css basics.
 
-To see how you can add code snippets, see below:
+Most interesting for me was refactoring the way I was adding the pictures. Initially I used an img tag, but adding imageson CSS using the background-image property proved much better for dynamism and responsiveness. I learned about the differences between vh and wh units, they proved very helpfull and will certainly become a main stay on my code practices.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+        <div class="imagem-desktop">
+            <!-- <img src='image-header-desktop.jpeg' alt="beautiful people in the office"></img> -->
+        </div>
+        <div class="imagem-mobile">
+
+        <!-- <img src='image-header-mobile.jpg' alt="beautiful people in the office"></img> -->
+        </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.imagem-desktop{
+    background-image: url('image-header-desktop.jpeg');
+
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.imagem-mobile{
+    background-image: url('image-header-mobile.jpg');
+    background-size: cover;
+    height: 30vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-width: 100%;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Using media query was also interesting. Testing various screen sizes with the inspect tool from the browser proved easy once the images were being added via CSS. For some reason that scapes me, adding images via img tag made cell phone screen sizes not responsive at all
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+@media only screen and (min-width: 1000px)  {}
+```
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+There is a clear need for me to improve on @media query and background-image attachment 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Example resource 1](https://www.w3schools.com/cssref/pr_background-image.asp) - This helped with several examples that are easy to visualize and copy. In the future hopefully I wil not need to check on W3Schools so much as things get more and more ingrained in my memory.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Rodrigo](https://gelatodigital.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thank you for my mentor Frederico Bicharra and my friend Guilherme Dias for the moral support.
