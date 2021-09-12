@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Portfolio URL: [https://gelatodigital.com/#portfolio](https://gelatodigital.com/#portfolio)
-- Live Site URL: [https://rodrigos-stats-preview-component.netlify.app/](https://rodrigos-stats-preview-component.netlify.app/
+- Live Site URL: [https://rodrigos-stats-preview-component.netlify.app/](https://rodrigos-stats-preview-component.netlify.app/)
 
 ## My process
 
