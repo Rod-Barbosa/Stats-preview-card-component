@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Rod-Barbosa/Stats-preview-card-component)
-- Live Site URL: [Add live site URL here](https://github.com/Rod-Barbosa/Stats-preview-card-component/blob/gh-pages/index.md)
+- Portfolio URL: [https://gelatodigital.com/#portfolio](https://gelatodigital.com/#portfolio)
+- Live Site URL: [https://rodrigos-stats-preview-component.netlify.app/](https://rodrigos-stats-preview-component.netlify.app/
 
 ## My process
 
